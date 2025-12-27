@@ -34,4 +34,10 @@ O projeto segue as melhores práticas de organização humana e técnica:
 2. Clone este repositório:
    ```bash
    git clone [https://github.com/SEU_USUARIO/the-eternal-maw.git](https://github.com/SEU_USUARIO/the-eternal-maw.git)
-3. Em breve versão teste .exe!
+4. Importe o projeto no Godot Engine.
+5. Pressione F5 e comece a devorar o cosmos!
+
+## ✍️ Autor
+Desenvolvido por [Diego/zyroot0x] como um estudo de mecânicas progressivas e game feel.
+
+Inspirado pelo conceito de "A Game About Feeding a Black Hole".
