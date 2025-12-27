@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5xjss1taq3an"]
+
+[ext_resource type="PackedScene" uid="uid://ciotcpg0y0amm" path="res://scenes/player.tscn" id="1_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://bdqusr4o3q5wm" path="res://scenes/item_spawner.tscn" id="2_w8frs"]
+[ext_resource type="Texture2D" uid="uid://boydvp1jg4n16" path="res://assets/OIP (2).webp" id="3_w8frs"]
+
+[node name="level" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -572.0
+offset_top = -320.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_w8frs")
+
+[node name="ItemContainer" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_w7c3h")]
+
+[node name="ItemSpawner" parent="." instance=ExtResource("2_w8frs")]

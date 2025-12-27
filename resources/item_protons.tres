@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://cjpq8ise8ins1"]
+
+[ext_resource type="Script" uid="uid://d0uj5b0k1nvhm" path="res://scripts/item_data.gd" id="1_67rkn"]
+[ext_resource type="Texture2D" uid="uid://bcrksohdv753l" path="res://assets/OIP.webp" id="2_e5l5i"]
+
+[resource]
+script = ExtResource("1_67rkn")
+sprite_texture = ExtResource("2_e5l5i")
+scale = Vector2(0.1, 0.1)
+metadata/_custom_type_script = "uid://d0uj5b0k1nvhm"

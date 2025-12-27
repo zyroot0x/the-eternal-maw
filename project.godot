@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The Eternal Maw"
+run/main_scene="uid://b5xjss1taq3an"
+config/features=PackedStringArray("4.5", "Mobile")
+
+[autoload]
+
+GameManager="*res://scripts/autoloads/game_manager.gd"
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Items"
+2d_physics/layer_3="Power-Ups"
+
+[rendering]
+
+renderer/rendering_method="mobile"
