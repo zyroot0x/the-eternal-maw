@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bug3ui70wjt6y" path="res://scripts/item_spawner.gd" id="1_cu1q2"]
 [ext_resource type="PackedScene" uid="uid://do4gojqi5ou5i" path="res://scenes/item.tscn" id="2_mqubi"]
 [ext_resource type="Script" uid="uid://d0uj5b0k1nvhm" path="res://scripts/item_data.gd" id="3_n0x5h"]
-[ext_resource type="Resource" uid="uid://cjpq8ise8ins1" path="res://resources/item_protons.tres" id="4_2vh2f"]
+[ext_resource type="Resource" uid="uid://cjpq8ise8ins1" path="res://resources/item_proton.tres" id="4_2vh2f"]
 [ext_resource type="Resource" uid="uid://b1s8xv66ce8pr" path="res://resources/item_meteor.tres" id="5_jqlno"]
 
 [node name="ItemSpawner" type="Node2D"]

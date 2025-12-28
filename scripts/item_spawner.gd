@@ -1,12 +1,10 @@
 extends Node2D
 
-# Arraste a cena base do seu item (Item.tscn) para cá
 @export var item_scene: PackedScene 
-# Arraste seus arquivos .tres (próton, pedra, etc.) para esta lista
 @export var possible_items: Array[ItemResource] = []
 
-@export var spawn_radius: float = 500.0 # Quão longe do centro eles surgem
-@export var spawn_rate: float = 1.0     # Um item por segundo
+@export var spawn_radius: float = 3000.0
+@export var spawn_rate: float = 1.0
 
 @onready var timer = $Timer
 
@@ -22,19 +20,19 @@ func _on_timer_timeout():
 	spawn_item()
 
 func spawn_item():
-	# 1. Escolhe um recurso aleatório da lista
+	# 1. escolhe um recurso aleatório da lista
 	var random_data = possible_items.pick_random()
 	
-	# 2. Instancia a cena do Item
+	# 2. instancia a cena do Item
 	var new_item = item_scene.instantiate()
 	
-	# 3. Define uma posição aleatória em um círculo
+	# 3. define uma posição aleatória em um círculo
 	var random_direction = Vector2.RIGHT.rotated(randf() * TAU)
 	var spawn_pos = random_direction * spawn_radius
 	
-	# 4. Configura o item ANTES de adicionar à cena
+	# 4. configura o item antes de adicionar à cena
 	new_item.global_position = spawn_pos
 	new_item.item_info = random_data
 	
-	# 5. Adiciona à árvore de nós (pode ser um nó "Items" no Level para organizar)
+	# 5. adiciona à árvore de nós
 	get_node("../ItemContainer").add_child(new_item)

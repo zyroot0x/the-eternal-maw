@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dq7mng7sqwlom" path="res://scripts/player.gd" id="1_3vyb7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
-radius = 239.1694
+radius = 6236.7563
 
 [node name="Player" type="Node2D" node_paths=PackedStringArray("GravityField")]
 z_index = 10
@@ -20,3 +20,4 @@ position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(-0.1, -0.1)

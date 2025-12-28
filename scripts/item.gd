@@ -13,20 +13,23 @@ extends Area2D
 @export var Player: AudioStreamPlayer2D = null
 @export var Sprite: Sprite2D = null
 
-var pull_speed: float = 2.0
+var velocity: Vector2 = Vector2.ZERO
+var being_pulled:bool = false
 var is_dead: bool = false
-var being_pulled = false
 var target = null
+
 
 func _ready():
 	rotation = randf() * TAU
+	velocity = Vector2(20000, 0).rotated(randf() * TAU)
 
 func _process(delta):
 	# move em direção ao player se for válido
 	if being_pulled and target:
-		pull_speed += delta * 10.0
-		global_position = global_position.move_toward(target.global_position, pull_speed)
-		
+		var direction = (target.global_position - global_position).normalized()
+		direction =+ velocity * delta
+		global_position += direction * delta
+	
 		var distance = global_position.distance_to(target.global_position)
 		if distance < 10.0:
 			be_consumed()

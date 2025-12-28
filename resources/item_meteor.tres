@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://d0uj5b0k1nvhm" path="res://scripts/item_data.gd" id="1_67rkn"]
 [ext_resource type="AudioStream" uid="uid://citw8ag4hnefv" path="res://assets/sounds/pop-423717.mp3" id="1_e5l5i"]
-[ext_resource type="Texture2D" uid="uid://b6vgjvb8u8uni" path="res://assets/items/OIP (1).webp" id="3_2r6yv"]
+[ext_resource type="Texture2D" uid="uid://b6vgjvb8u8uni" path="res://assets/items/meteor.webp" id="3_e5l5i"]
 
 [resource]
 script = ExtResource("1_67rkn")
 collect_sound = ExtResource("1_e5l5i")
-sprite_texture = ExtResource("3_2r6yv")
-scale = Vector2(0.1, 0.1)
-pull_speed_mult = 2.0
+sprite_texture = ExtResource("3_e5l5i")
+mass = 10.0
+name = "Meteor"
 metadata/_custom_type_script = "uid://d0uj5b0k1nvhm"
