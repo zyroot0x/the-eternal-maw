@@ -12,10 +12,9 @@
 [node name="Background" type="Sprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 2
-scale = Vector2(10, 10)
 texture = ExtResource("3_w8frs")
 region_enabled = true
-region_rect = Rect2(-7007.93, -3374.4832, 172.20313, 118.58325)
+region_rect = Rect2(-11094.425, -2304.0503, 1319.6768, 797.68774)
 
 [node name="ItemContainer" type="Node2D" parent="."]
 z_index = 5

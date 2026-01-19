@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://ciotcpg0y0amm"]
+[gd_scene load_steps=6 format=3 uid="uid://ciotcpg0y0amm"]
 
 [ext_resource type="Script" uid="uid://dq7mng7sqwlom" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://dvttyksxmrtv4" path="res://assets/player/player.png" id="2_g2els"]
-[ext_resource type="Script" uid="uid://bg8pc07psgqgp" path="res://scripts/camera_2d.gd" id="3_qhqgy"]
+[ext_resource type="Script" uid="uid://bg8pc07psgqgp" path="res://scripts/camera.gd" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(804, 1324)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qhqgy"]
+radius = 9.0
 
 [node name="Player" type="Node2D" node_paths=PackedStringArray("GravityField")]
 script = ExtResource("1_3vyb7")
@@ -13,6 +16,7 @@ GravityField = NodePath("GravityField")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+position = Vector2(1, 2)
 texture = ExtResource("2_g2els")
 
 [node name="GravityField" type="Area2D" parent="."]
@@ -25,3 +29,8 @@ shape = SubResource("RectangleShape2D_g2els")
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_smoothed = true
 script = ExtResource("3_qhqgy")
+
+[node name="ConsumeArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConsumeArea"]
+shape = SubResource("CircleShape2D_qhqgy")

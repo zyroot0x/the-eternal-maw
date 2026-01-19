@@ -6,8 +6,9 @@
 
 [resource]
 script = ExtResource("2_sibwu")
+special_velocity = null
 collect_sound = ExtResource("1_u60ba")
 sprite_texture = ExtResource("3_5pwf1")
-mass = 10.0
 name = "Meteor"
+mass = 100000.0
 metadata/_custom_type_script = "uid://d0uj5b0k1nvhm"

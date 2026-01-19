@@ -9,13 +9,14 @@ _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4gq7n"]
-radius = 826.07324
+radius = 1.0
 
-[node name="Item" type="Area2D" node_paths=PackedStringArray("ScreenNotifier", "StreamPlayer", "CpuParticles", "Sprite")]
+[node name="Item" type="Area2D" node_paths=PackedStringArray("ScreenNotifier", "StreamPlayer", "CollisionShape", "CpuParticles", "Sprite")]
 collision_layer = 2
 script = ExtResource("1_4gq7n")
 ScreenNotifier = NodePath("VisibleOnScreenNotifier2D")
 StreamPlayer = NodePath("AudioStreamPlayer2D")
+CollisionShape = NodePath("CollisionShape2D")
 CpuParticles = NodePath("Sprite2D/CPUParticles2D")
 Sprite = NodePath("Sprite2D")
 

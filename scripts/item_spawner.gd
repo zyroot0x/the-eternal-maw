@@ -4,7 +4,7 @@ extends Node2D
 @export var possible_items: Array[ItemResource] = []
 @export var possible_particles: Array[ItemResource] = []
 
-@export var spawn_radius: float = 3000.0
+@export var spawn_radius: float = 350.0
 @export var spawn_rate: float = 1.0
 
 @onready var timer = $Timer
