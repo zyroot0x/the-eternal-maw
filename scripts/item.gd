@@ -33,7 +33,7 @@ func _ready():
 	
 	# Se for rápido, adicionamos um "boost" aleatório
 	if e_rapido:
-		base_speed += randf_range(100.0, 500.0)
+		base_speed += randf_range(10.0, 100.0)
 		
 		# Muda a cor do sprite para dar a dica visual de que é especial
 		Sprite.modulate = Color.GOLD 
@@ -48,7 +48,7 @@ func _process(delta):
 	
 	if being_pulled and target:
 		var distance = global_position.distance_to(target.global_position)
-		var gravity_force = 500000.0 / (distance + 1.0) # O +1 evita divisão por zero
+		var gravity_force = 100000.0 / (distance + 1.0) # O +1 evita divisão por zero
 		var gravity_dir = (target.global_position - global_position).normalized()
 		
 		# A gravidade curva a trajetória da velocidade
