@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://bg8pc07psgqgp" path="res://scripts/camera.gd" id="3_qhqgy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
-radius = 25.96151
+radius = 460.2445
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qhqgy"]
 radius = 12.0

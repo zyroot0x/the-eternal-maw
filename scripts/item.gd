@@ -36,7 +36,7 @@ func _ready():
 	
 	# define a velocidade base
 	rotation = randf() * TAU
-	var base_speed = 300.0
+	var base_speed = 10.0
 	
 	# se for rápido, adicionamos um "boost" aleatório
 	if e_rapido:
@@ -55,7 +55,7 @@ func _process(delta):
 	
 	if being_pulled and target:
 		var distance = global_position.distance_to(target.global_position)
-		var gravity_force = 100000.0 / (distance + 1.0) # O +1 evita divisão por zero
+		var gravity_force = 100000.0 / (distance + 1.0) # +1 evita divisão por zero
 		var gravity_dir = (target.global_position - global_position).normalized()
 		
 		# a gravidade curva a trajetória da velocidade
