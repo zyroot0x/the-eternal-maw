@@ -1,44 +1,45 @@
 # ⚫ The Eternal Maw
 
-> "O universo começou com o nada, e para o nada ele deve retornar."
+> "The universe began with nothing, and to nothing it must return."
 
-**The Eternal Maw** é um jogo incremental e experimental desenvolvido na engine **Godot 4.5.1**. Você assume o controle de um vácuo cósmico senciente com um único objetivo: consumir toda a matéria existente. 
+**The Eternal Maw** is an incremental and experimental game developed using the **Godot Engine 4.x**. You take control of a sentient cosmic vacuum with a single goal: consume all existing matter. 
 
-Desde partículas subatômicas até aglomerados galácticos, nada escapa da sua gravidade.
+From subatomic particles to galactic clusters, nothing escapes your gravity.
 
 ---
 
-## 🚀 Funcionalidades (Features)
+## 🚀 Features
 
-* **🌀 Gravidade Evolutiva:** Um sistema de atração 2D que se torna mais potente conforme você cresce.
-* **📈 Crescimento Logarítmico:** Fórmulas matemáticas balanceadas para garantir que a progressão seja satisfatória e infinita.
-* **📦 Arquitetura Baseada em Resources:** Itens e dados do jogo são desacoplados, permitindo expansão fácil de novos conteúdos sem mexer no código base.
-* **🌌 Spawn Procedural:** Um sistema de geração de matéria que povoa o vácuo ao redor do jogador de forma dinâmica.
+* **🌀 Evolving Gravity:** A 2D attraction system that scales in power as you grow.
+* **📈 Logarithmic Growth:** Balanced mathematical formulas to ensure satisfying and infinite progression.
+* **📦 Resource-Based Architecture:** Game items and data are decoupled, allowing easy expansion of new content without touching the core code.
+* **🌌 Procedural Spawning:** A dynamic matter generation system that populates the vacuum around the player.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tech Stack
 
-* [Godot Engine 4.5.1](https://godotengine.org/) - O motor principal.
-* **GDScript** - Linguagem de script para a lógica de jogo.
-* **Git & GitHub** - Controle de versão e hospedagem.
+* [Godot Engine 4.x](https://godotengine.org/) - The core engine.
+* **GDScript** - Scripting language for game logic.
+* **Git & GitHub** - Version control and hosting.
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
-O projeto segue as melhores práticas de organização humana e técnica:
-- `assets/`: Arquivos gráficos do jogo (imagens, sons).
-- `resources/`: Definições de dados (.tres) para fácil balanceamento.
-- `scenes/`: Cenas do Player e Itens.
-- `scripts/`: Toda a lógica central, incluindo o Singleton `GameManager`.
+The project follows technical and organizational best practices:
+- `assets/`: Graphic files (images, sounds).
+- `resources/`: Data definitions (.tres) for easy balancing.
+- `scenes/`: Player and Item scenes.
+- `scripts/`: Core logic, including the `GameManager` Singleton.
 
-## 🎮 Como Jogar
+## 🎮 How to Play
 
-1. Certifique-se de ter o **Godot 4.5.1** (ou superior) instalado.
-2. Clone este repositório:
+1. Make sure you have **Godot 4.x** (or higher) installed.
+2. Clone this repository:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/the-eternal-maw.git](https://github.com/SEU_USUARIO/the-eternal-maw.git)
-4. Importe o projeto no Godot Engine.
-5. Pressione F5 e comece a devorar o cosmos!
+   git clone [https://github.com/zyroot0x/the-eternal-maw.git](https://github.com/zyroot0x/the-eternal-maw.git)
+3. Import the project into Godot Engine.
+4. Press F5 and start devouring the cosmos!
 
-## ✍️ Autor
-Desenvolvido por [Diego/zyroot0x] como um estudo de mecânicas progressivas e game feel.
+## ✍️ Author
 
-Inspirado pelos conceitos de "A Game About Feeding a Black Hole" & "SPORE™".
+Developed by [Diego/zyroot0x] as a study of progressive mechanics and game feel.
+
+Inspired by the concepts of "A Game About Feeding a Black Hole" & "SPORE™".
