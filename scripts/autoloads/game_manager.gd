@@ -1,3 +1,4 @@
+#Game Manager
 extends Node
 
 signal mass_changed(new_mass)
@@ -11,20 +12,16 @@ var player_mass: float = 0.0:
 func add_mass(amount: float) -> void:
 	player_mass += amount
 
-func player_mass_amount() -> String:
-	var formated_mass = player_mass
-	var prefixes: Array[String] = ["", "k", "M", "G", "T", "P", "E", "Z", "Y", "GRANDÃO"]
+func get_formatted_mass() -> String:
+	var temp_mass = player_mass
+	var prefixes: Array[String] = ["g", "kg", "Mg", "Gg", "Tg", "Pg", "Eg", "Zg", "Yg", "GRANDÃO"]
 	var n = 0
 	
-	while formated_mass >= 1000:
-		formated_mass /= 1000
-		
-	str(formated_mass)
+	while temp_mass >= 1000.0 and n < prefixes.size() - 1:
+		temp_mass /= 1000.0
+		n += 1
 	
-	return "%.2f %s" % [formated_mass, prefixes[n]]
+	return "%.2f %s" % [temp_mass, prefixes[n]]
 
 # Debug
-var scroll: bool = false:
-	set(value):
-		scroll = value
-		print(scroll)
+var scroll: bool = false

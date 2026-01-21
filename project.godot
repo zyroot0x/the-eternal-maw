@@ -24,7 +24,7 @@ window/stretch/mode="canvas_items"
 
 [global_group]
 
-Edible="Itens que aumentam o tamanho do buraco negro."
+Item="Itens que aumentam o tamanho do buraco negro."
 
 [layer_names]
 

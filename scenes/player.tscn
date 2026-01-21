@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ciotcpg0y0amm"]
+[gd_scene load_steps=7 format=3 uid="uid://ciotcpg0y0amm"]
 
 [ext_resource type="Script" uid="uid://dq7mng7sqwlom" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://dvttyksxmrtv4" path="res://assets/player/player.png" id="2_g2els"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
 radius = 460.2445
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qlg0r"]
+radius = 24.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qhqgy"]
 radius = 12.0
@@ -26,11 +29,19 @@ collision_mask = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Accretion Disk"]
 shape = SubResource("CircleShape2D_dqkch")
 
+[node name="Accretion Disk2" type="Area2D" parent="."]
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Accretion Disk2"]
+shape = SubResource("CircleShape2D_qlg0r")
+debug_color = Color(0.6588322, 0, 0.0970406, 0.41960785)
+
 [node name="Event Horizon" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Event Horizon"]
 position = Vector2(0, -2)
 shape = SubResource("CircleShape2D_qhqgy")
+debug_color = Color(0, 0, 0, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_smoothed = true
