@@ -1,6 +1,8 @@
 # Godot-specific ignores
 .godot/
 .tmp/
+.import/
+*.uid
 export_preset.cfg
 /editor_settings-4.tre
 /editor_settings-3.tre
@@ -11,3 +13,22 @@ Thumbs.db
 
 # Krita-specific ignores
 *.kra
+
+# Plugins ignores
+addons/
+
+# Builds & Executables ignores
+*.exe
+*.zip
+*.rar
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.app
+*.apk
+*.ipa
+
+# Exportation Folder ignores
+export/
